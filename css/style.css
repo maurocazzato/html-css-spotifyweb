@@ -119,6 +119,7 @@ hr{
 #user{
     margin-top: 130px;
 }
+
 /* main */
 #mainnav{
     display: flex;
@@ -137,7 +138,7 @@ hr{
 #greenbar-orizzontale{
     color: rgba(89,129,40,255);
     max-width: 3%;
-    margin-left: 325px;
+    margin-left: 315px;
     margin-top: -10px;
 }
 .song{
@@ -167,13 +168,20 @@ hr{
 /* wrapbase */
 .wrapbase-box{
     width: calc(100%/3);
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    
+    padding: 5px; 
 }
 .wrapbase-box img{
     width: 10%;
+}
+.wrapbase-box li{
+    float: left;
+    margin-right: 20px;
+}
+/* wrapbase-sinistro */
+#wrapbase-sinistro{
+    display: flex;
+    align-items: center;
+
 }
 #songdescription{
     margin-left: -270px;
@@ -191,20 +199,69 @@ hr{
     color: rgb(105,108,114);
     
 }
-.wrapbase-box li{
-    float: left;
-    margin-right: 20px;
-}
 /* wrapbase player */
-#wrapbase-player i{
-    font-size: 30px;
-    color: white;
+.wrapbase-player{
+    height: calc(100%/2);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+.wrapbase-player i{
+    font-size: 20px;
+    color: white;
+}
+
+
+#lineplayer{
+    width: 400px;
+    background-color: grey;
+    height: 5px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#lineplayerchiaro{
+    width: 100px;
+    background-color: rgb(203, 193, 193);
+    border-radius: 20px;
+    height: 5px;
+}
+.wrapbase-player p{
+    color: white;
+    font-weight: bold;
+}
 /* wrapbase destro */
+#wrapbase-destro{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
 #wrapbase-destro i{
     color: white;
 }
 #wrapbase-destro hr{
     max-width: 20px;
+}
+#lineplayer-destro{
+    width: 150px;
+    background-color: grey;
+    height: 5px;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+#lineplayerchiaro-destro{
+    width: 60px;
+    background-color: rgb(203, 193, 193);
+    border-radius: 20px;
+    height: 5px;
+}
+ /* effects */
+.sidebar i{
+    transition: 1s;
+}
+.sidebar:hover {
+    background: white;
 }
